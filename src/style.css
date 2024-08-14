@@ -1,19 +1,36 @@
+@font-face {
+    font-family: "Campana Script";
+    src: url(./assets/fonts/CampanaScript.woff2);
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(./assets/fonts/CaviarDreams.woff2);
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(./assets/fonts/CaviarDreams_Bold.woff2);
+    font-weight: bold;
+}
+
 * {
+    font-family: "Caviar Dreams";
     box-sizing: content-box;
     padding: 0;
     margin: 0;
 }
 
 body {
-    background: url(./img/bg.webp) no-repeat;
+    background: url(./assets/img/bg.webp) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-nav, #content {
-    background-color: rgba(0, 0, 0, 0.5);
+nav, #content, footer {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 nav {
@@ -29,11 +46,10 @@ nav button {
     border-bottom: 2px solid transparent;
     background-color: transparent;
     color: white;
-    font-size: 1rem;
+    font-size: min(1rem, 4vw);
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    box-shadow: 100px 100px 100px black;
 
     &:hover {
         cursor: pointer;
@@ -47,4 +63,89 @@ nav button {
 
 #content {
     flex: 1;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    color: white;
+}
+
+#content * {
+    text-align: center;
+}
+
+#content h1 {
+    width: 100vw;
+}
+
+#content .greeting {
+    width: fit-content;
+    font-family: "Campana Script";
+    font-size: min(4rem, 12vw);
+    font-weight: 100;
+    background: linear-gradient(to bottom, white, #6F00FF);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#content .restaurant-name {
+    display: block;
+    color: white;
+    font-family: "Caviar Dreams";
+    font-weight: bold;
+    font-size: min(6rem, 16vw);
+    translate: 0 -48px;
+}
+
+#content hr {
+    width: max(40%, 280px);
+    translate: 0 -48px;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 4px;
+    background-color: white;
+}
+
+#content p {
+    font-size: min(1.5rem, 8vw);
+    font-weight: bold;
+    width: max(40%, 280px);
+    translate: 0 -24px;
+    padding: 16px 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:480px) {
+    #content .restaurant-name {
+        translate: 0 -32px;
+    }
+
+    #content hr {
+        translate: 0 -32px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    #content .restaurant-name {
+        translate: 0 -24px;
+    }
+
+    #content hr {
+        translate: 0 -24px;
+    }
 }
