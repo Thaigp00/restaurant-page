@@ -59,6 +59,10 @@ nav button {
     &:active {
         filter: brightness(0.8);
     }
+
+    &.selected {
+        border-bottom-color: #6F00FF;
+    }
 }
 
 #content {
@@ -73,7 +77,7 @@ nav button {
     text-align: center;
 }
 
-#content h1 {
+#content .title {
     width: 100vw;
 }
 
@@ -107,7 +111,7 @@ nav button {
     background-color: white;
 }
 
-#content p {
+#content p.slogan {
     font-size: min(1.5rem, 8vw);
     font-weight: bold;
     width: max(40%, 280px);
@@ -148,4 +152,65 @@ footer a {
     #content hr {
         translate: 0 -24px;
     }
+}
+
+
+/* Menu */
+
+#menu {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(fit-content, minmax(1fr, 200px));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4px;
+
+    /* height: 400px; */
+    width: 100vw;
+}
+
+.dish {
+    background-color: #6F00FF;
+    height: 200px;
+}
+
+
+/* About */
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #E4E3E2;
+    color: black;
+}
+
+.about-wrapper h1 {
+    &.slogan-start {
+        align-self: flex-start;
+        background: linear-gradient(to bottom, black, #6F00FF);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &.slogan-end {
+        align-self: flex-end;
+        background: linear-gradient(to top, black, #6F00FF);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.about-wrapper p {
+    flex: 1;
+    width: 50%;
+    padding: 8px;
+    margin: 8px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+    font-size: min(1.5rem, 4vw);
+    font-weight: bold;
 }
