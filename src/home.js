@@ -1,6 +1,6 @@
 export default () => {
     const content = document.querySelector("#content");
-    const button = document.querySelector("nav button.home")
+    const button = document.querySelector("nav button#home")
     button.classList.add("selected");
 
     const greeting = document.createElement("span");

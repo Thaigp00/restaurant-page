@@ -157,23 +157,6 @@ footer a {
 
 /* Menu */
 
-#menu {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(fit-content, minmax(1fr, 200px));
-    grid-template-rows: repeat(2, 1fr);
-    gap: 4px;
-
-    /* height: 400px; */
-    width: 100vw;
-}
-
-.dish {
-    background-color: #6F00FF;
-    height: 200px;
-}
-
-
 /* About */
 
 .about-wrapper {

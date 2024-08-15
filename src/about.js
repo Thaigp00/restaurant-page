@@ -1,6 +1,6 @@
 export default () => {
     const content = document.querySelector("#content");
-    const button = document.querySelector("nav button.about")
+    const button = document.querySelector("nav button#about")
     button.classList.add("selected");
 
     const aboutWrapper = document.createElement("div");
