@@ -88,7 +88,7 @@ nav button {
     font-weight: 100;
     background: linear-gradient(to bottom, white, #6F00FF);
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 
 }
 
@@ -166,23 +166,23 @@ footer a {
     width: 80%;
     padding: 16px;
     border-radius: 8px;
-    background-color: #E4E3E2;
-    color: black;
+    /* background-color: #E4E3E2; */
+    color: white;
 }
 
 .about-wrapper h1 {
     &.slogan-start {
         align-self: flex-start;
-        background: linear-gradient(to bottom, black, #6F00FF);
+        background: linear-gradient(to left, white, #6F00FF);
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: transparent;
     }
 
     &.slogan-end {
         align-self: flex-end;
-        background: linear-gradient(to top, black, #6F00FF);
+        background: linear-gradient(to right, white, #6F00FF);
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: transparent;
     }
 }
 
@@ -191,8 +191,8 @@ footer a {
     width: 50%;
     padding: 8px;
     margin: 8px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
     border-radius: 2px;
     font-size: min(1.5rem, 4vw);
     font-weight: bold;
