@@ -1,3 +1,5 @@
+import "./../styles/menu.css";
+
 const menu = [
     {name: "Filet Mignon", id: "filet-mignon", url: "./assets/img/dishes/filet-mignon.webp"},
     {name: "Lobster", id: "lobster", url: "./assets/img/dishes/lobster.webp"},

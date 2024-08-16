@@ -1,7 +1,7 @@
-import "./style.css";
-import loadHome from "./home.js";
-import loadMenu from "./menu.js";
-import loadAbout from "./about.js";
+import "./styles/main.css";
+import loadHome from "./scripts/home.js";
+import loadMenu from "./scripts/menu.js";
+import loadAbout from "./scripts/about.js";
 
 const initialPage = "home";
 let currentPage = initialPage;

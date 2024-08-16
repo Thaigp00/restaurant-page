@@ -1,3 +1,5 @@
+import "./../styles/home.css";
+
 export default () => {
     const content = document.querySelector("#content");
     const button = document.querySelector("nav button#home")

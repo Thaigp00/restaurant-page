@@ -1,0 +1,65 @@
+#content .title {
+    width: 100vw;
+    text-align: center;
+}
+
+#content .greeting {
+    width: fit-content;
+    font-family: "Campana Script";
+    font-size: min(4rem, 12vw);
+    font-weight: 100;
+    background: linear-gradient(to bottom, var(--text-color), var(--main-color));
+    background-clip: text;
+    color: transparent;
+
+}
+
+#content .restaurant-name {
+    display: block;
+    color: var(--text-color);
+    font-family: "Caviar Dreams";
+    font-weight: bold;
+    font-size: min(6rem, 16vw);
+    translate: 0 -48px;
+}
+
+#content hr {
+    width: max(40%, 280px);
+    translate: 0 -48px;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 4px;
+    background-color: var(--text-color);
+}
+
+#content p.slogan {
+    font-size: min(1.5rem, 8vw);
+    font-weight: bold;
+    width: max(40%, 280px);
+    translate: 0 -24px;
+    padding: 16px 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+}
+
+@media screen and (max-width:480px) {
+    #content .restaurant-name {
+        translate: 0 -32px;
+    }
+
+    #content hr {
+        translate: 0 -32px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    #content .restaurant-name {
+        translate: 0 -24px;
+    }
+
+    #content hr {
+        translate: 0 -24px;
+    }
+}
