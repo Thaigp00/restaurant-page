@@ -36,7 +36,7 @@ function loadPage(newPage) {
     }
 }
 
-function start() {
+function loadInitialPage() {
     loadPage(initialPage);
 }
 
@@ -48,5 +48,5 @@ function awaitButtons() {
     }));
 }
 
-start();
+loadInitialPage();
 awaitButtons();
